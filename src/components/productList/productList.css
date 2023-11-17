@@ -3,6 +3,7 @@
   height: 70vh;
   padding: 32px;
   box-sizing: border-box;
+  cursor: default;
 }
 
 table {
@@ -52,6 +53,8 @@ button {
   border: none;
   padding: 10px;
   background-color: #ffffff00;
+  cursor: pointer;
+  text-transform: capitalize;
 }
 
 button:hover {
