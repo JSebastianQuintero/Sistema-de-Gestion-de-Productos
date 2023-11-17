@@ -15,8 +15,10 @@ function App() {
   return (
     <div className="App">
       <ProductListComponent inventory={inventory} setInventory={setInventory} />
-      <ProductSelectorComponent />
-      <PurchaseDetailsComponent />
+      <div className="sub-tables">
+        <ProductSelectorComponent />
+        <PurchaseDetailsComponent inventory={inventory} />
+      </div>
     </div>
   );
 }

@@ -3,7 +3,6 @@
   height: 70vh;
   padding: 32px;
   box-sizing: border-box;
-  cursor: default;
 }
 
 table {
@@ -14,7 +13,6 @@ table {
 
 .tbl-header {
   background-color: #dddddd;
-  box-shadow: inset;
 }
 
 .tbl-content {

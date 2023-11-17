@@ -1,0 +1,11 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+.sub-tables {
+  display: flex;
+  flex-direction: row;
+}
