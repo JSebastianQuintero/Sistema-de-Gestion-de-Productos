@@ -12,7 +12,8 @@ table {
 }
 
 .tbl-header {
-  background-color: #ffffff;
+  background-color: #dddddd;
+  box-shadow: inset;
 }
 
 .tbl-content {
@@ -21,29 +22,24 @@ table {
   overflow-x: auto;
   margin-top: 0px;
   position: relative;
-  border: 1px solid black;
   border-top: none;
 }
 
 .tbl-content tr:hover {
-  background-color: #f5f5f5;
+  background-color: #f1f1f1;
 }
 
 th {
   text-align: center;
   padding: 20px 15px;
-  font-weight: 500;
-  font-size: 12px;
+  font-weight: 700;
+  font-size: 15px;
   text-transform: uppercase;
-  border: 1px solid #000000;
-}
-tr {
-  height: 50px;
+  color: #474747;
 }
 
 td {
   text-align: center;
-  padding: 15px;
   font-weight: 300;
   font-size: 12px;
 }
@@ -57,6 +53,7 @@ button {
   padding: 10px;
   background-color: #ffffff00;
 }
+
 button:hover {
   transform: scale(1.1);
 }

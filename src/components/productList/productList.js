@@ -1,5 +1,9 @@
-import { useEffect } from "react";
 import "./productList.css";
+import {
+  decrementQuantity,
+  incrementQuantity,
+  removeProduct,
+} from "../../utils/products";
 
 export const ProductListComponent = ({ inventory, setInventory }) => {
   return (
@@ -24,15 +28,33 @@ export const ProductListComponent = ({ inventory, setInventory }) => {
               return (
                 <tr key={item.id}>
                   <td>
-                    <button>&lt;</button>
+                    <button
+                      onClick={() => {
+                        decrementQuantity(item.id, inventory, setInventory);
+                      }}
+                    >
+                      &lt;
+                    </button>
                     {item.quantity}
-                    <button>&gt;</button>
+                    <button
+                      onClick={() => {
+                        incrementQuantity(item.id, inventory, setInventory);
+                      }}
+                    >
+                      &gt;
+                    </button>
                   </td>
                   <td>{item.name}</td>
                   <td className="number-aling">{item.price}</td>
                   <td className="number-aling">{item.price * item.quantity}</td>
                   <td>
-                    <button>quitar</button>
+                    <button
+                      onClick={() => {
+                        removeProduct(item.id, inventory, setInventory);
+                      }}
+                    >
+                      quitar
+                    </button>
                   </td>
                 </tr>
               );
