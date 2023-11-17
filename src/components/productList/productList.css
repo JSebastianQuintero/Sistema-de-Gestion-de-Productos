@@ -1,1 +1,62 @@
+.ProductListComponent {
+  width: 100vw;
+  height: 70vh;
+  padding: 32px;
+  box-sizing: border-box;
+}
 
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.tbl-header {
+  background-color: #ffffff;
+}
+
+.tbl-content {
+  background-color: #ffffff;
+  height: 50vh;
+  overflow-x: auto;
+  margin-top: 0px;
+  position: relative;
+  border: 1px solid black;
+  border-top: none;
+}
+
+.tbl-content tr:hover {
+  background-color: #f5f5f5;
+}
+
+th {
+  text-align: center;
+  padding: 20px 15px;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: 1px solid #000000;
+}
+tr {
+  height: 50px;
+}
+
+td {
+  text-align: center;
+  padding: 15px;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.number-aling {
+  text-align: right;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  background-color: #ffffff00;
+}
+button:hover {
+  transform: scale(1.1);
+}
