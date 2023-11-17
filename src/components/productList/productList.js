@@ -30,7 +30,7 @@ export const ProductListComponent = ({ inventory, setInventory }) => {
                   </td>
                   <td>{item.name}</td>
                   <td className="number-aling">{item.price}</td>
-                  <td className="number-aling"></td>
+                  <td className="number-aling">{item.price * item.quantity}</td>
                   <td>
                     <button>quitar</button>
                   </td>
