@@ -29,22 +29,7 @@ table {
 }
 
 th {
-  text-align: center;
   padding: 20px 15px;
-  font-weight: 700;
-  font-size: 15px;
-  text-transform: uppercase;
-  color: #474747;
-}
-
-td {
-  text-align: center;
-  font-weight: 300;
-  font-size: 12px;
-}
-
-.number-aling {
-  text-align: right;
 }
 
 button {

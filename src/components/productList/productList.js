@@ -12,11 +12,11 @@ export const ProductListComponent = ({ inventory, setInventory }) => {
         <table>
           <thead>
             <tr>
-              <th>cantidad</th>
-              <th>descripcion</th>
-              <th>subtotal</th>
-              <th>total</th>
-              <th></th>
+              <th className="title-text">cantidad</th>
+              <th className="title-text">descripcion</th>
+              <th className="title-text">subtotal</th>
+              <th className="title-text">total</th>
+              <th className="title-text"></th>
             </tr>
           </thead>
         </table>
@@ -26,7 +26,7 @@ export const ProductListComponent = ({ inventory, setInventory }) => {
           <tbody>
             {inventory.map((item) => {
               return (
-                <tr key={item.id}>
+                <tr key={item.id} className="standard-text">
                   <td>
                     <button
                       onClick={() => {
@@ -45,8 +45,8 @@ export const ProductListComponent = ({ inventory, setInventory }) => {
                     </button>
                   </td>
                   <td>{item.name}</td>
-                  <td className="number-aling">{item.price}</td>
-                  <td className="number-aling">{item.price * item.quantity}</td>
+                  <td>${item.price}</td>
+                  <td>${item.price * item.quantity}</td>
                   <td>
                     <button
                       onClick={() => {

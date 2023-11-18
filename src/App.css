@@ -3,9 +3,31 @@
   flex-direction: column;
   box-sizing: border-box;
   cursor: default;
+  height: 100vh;
+}
+
+.main-table {
+  height: 70vh;
 }
 
 .sub-tables {
+  height: 30vh;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.title-text {
+  text-align: center;
+  font-weight: 700;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #474747;
+}
+
+.standard-text {
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
 }
