@@ -35,3 +35,19 @@ export function countItems(inventory) {
 export function getTotalPrice(inventory) {
   return inventory.reduce((acc, item) => acc + item.price * item.quantity, 0);
 }
+
+// Desc: Utility functions for product selector
+
+export function addProduct(item, inventory, setInventory) {
+  let found = false;
+  inventory.forEach((inventoryItem) => {
+    if (inventoryItem.id === item.id) {
+      found = true;
+    }
+  });
+  if (found) {
+    incrementQuantity(item.id, inventory, setInventory);
+  } else {
+    setInventory([...inventory, { ...item, quantity: 1 }]);
+  }
+}
