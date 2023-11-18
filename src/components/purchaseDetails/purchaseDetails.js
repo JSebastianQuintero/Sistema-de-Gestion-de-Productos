@@ -4,14 +4,10 @@ import "./purchaseDetails.css";
 export const PurchaseDetailsComponent = ({ inventory }) => {
   return (
     <div className="PurchaseDetailsComponent">
-      <div className="title title-text">Detalles de la compra</div>
-      <div className="content">
-        <span className="standard-text">
-          cantidad de items: {countItems(inventory)}
-        </span>
-        <span className="standard-text">
-          precio total: ${getTotalPrice(inventory)}
-        </span>
+      <div className="title-bar">Detalles de la compra</div>
+      <div className="purchase-list-content">
+        <span>cantidad de items: {countItems(inventory)}</span>
+        <span>precio total: ${getTotalPrice(inventory)}</span>
       </div>
     </div>
   );

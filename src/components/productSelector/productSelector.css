@@ -1,11 +1,10 @@
 .ProductSelectorComponent {
-  width: 50%;
-  padding: 0px 32px 32px 32px;
-  box-sizing: content-box;
-  display: flex;
-  flex-direction: column;
+  background-color: #ffffff;
+  height: 100%;
 }
 
-.item-row {
-  cursor: pointer;
+.stock-list-bottom {
+  height: 78.5%;
+  position: relative;
+  overflow: auto;
 }

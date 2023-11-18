@@ -8,16 +8,16 @@ export const ProductSelectorComponent = ({
 }) => {
   return (
     <div className="ProductSelectorComponent">
-      <div className="tbl-header">
-        <table>
+      <div className="title-bar">
+        <table className="full-height">
           <thead>
             <tr>
-              <th className="title-text">seleccionar nuevo producto</th>
+              <th>seleccionar nuevo producto</th>
             </tr>
           </thead>
         </table>
       </div>
-      <div className="tbl-content">
+      <div className="stock-list-bottom">
         <table>
           <thead />
           <tbody>
@@ -25,13 +25,13 @@ export const ProductSelectorComponent = ({
               return (
                 <tr
                   key={item.id}
-                  className="standard-text item-row"
+                  className="list-function"
                   onClick={() => {
                     addProduct(item, inventory, setInventory);
                   }}
                 >
                   <td>{item.name}</td>
-                  <td className="number-aling">${item.price}</td>
+                  <td>${item.price}</td>
                 </tr>
               );
             })}

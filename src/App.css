@@ -1,33 +1,65 @@
 .App {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  cursor: default;
-  height: 100vh;
-}
-
-.main-table {
-  height: 70vh;
-}
-
-.sub-tables {
-  height: 30vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.title-text {
   text-align: center;
+  cursor: default;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.app-top {
+  height: 70vh;
+  padding: 32px 32px 0 32px;
+}
+
+.app-bottom {
+  height: 30vh;
+  padding: 32px;
+}
+
+/* table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* button */
+.styled-button {
+  border: 0;
+  text-transform: capitalize;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.styled-button:hover {
+  transform: scale(1.2);
+  color: #8200ff;
+}
+
+/* list */
+.list-function {
+  cursor: pointer;
+}
+
+.list-function:hover {
+  background-color: #bdacf5;
+  color: #8200ff;
+}
+
+.title-bar {
+  height: 5vh;
+  background-color: #8200ff;
+  color: #bdacf5;
   font-weight: 700;
   font-size: 17px;
   text-transform: uppercase;
-  color: #474747;
-}
-
-.standard-text {
-  text-align: center;
-  font-weight: 300;
-  font-size: 15px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
 }

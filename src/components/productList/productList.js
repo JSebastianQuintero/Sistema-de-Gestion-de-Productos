@@ -8,27 +8,28 @@ import {
 export const ProductListComponent = ({ inventory, setInventory }) => {
   return (
     <div className="ProductListComponent">
-      <div className="tbl-header">
-        <table>
+      <div className="title-bar">
+        <table className="full-height">
           <thead>
             <tr>
-              <th className="title-text">cantidad</th>
-              <th className="title-text">descripcion</th>
-              <th className="title-text">subtotal</th>
-              <th className="title-text">total</th>
-              <th className="title-text"></th>
+              <th>cantidad</th>
+              <th>descripcion</th>
+              <th>subtotal</th>
+              <th>total</th>
+              <th></th>
             </tr>
           </thead>
         </table>
       </div>
-      <div className="tbl-content">
+      <div className="product-list-bottom">
         <table>
           <tbody>
             {inventory.map((item) => {
               return (
-                <tr key={item.id} className="standard-text">
+                <tr key={item.id}>
                   <td>
                     <button
+                      className="styled-button"
                       onClick={() => {
                         decrementQuantity(item.id, inventory, setInventory);
                       }}
@@ -37,6 +38,7 @@ export const ProductListComponent = ({ inventory, setInventory }) => {
                     </button>
                     {item.quantity}
                     <button
+                      className="styled-button"
                       onClick={() => {
                         incrementQuantity(item.id, inventory, setInventory);
                       }}
@@ -49,6 +51,7 @@ export const ProductListComponent = ({ inventory, setInventory }) => {
                   <td>${item.price * item.quantity}</td>
                   <td>
                     <button
+                      className="styled-button"
                       onClick={() => {
                         removeProduct(item.id, inventory, setInventory);
                       }}
