@@ -25,7 +25,7 @@ export const ProductSelectorComponent = ({
               return (
                 <tr
                   key={item.id}
-                  className="standard-text"
+                  className="standard-text item-row"
                   onClick={() => {
                     addProduct(item, inventory, setInventory);
                   }}

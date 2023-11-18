@@ -7,37 +7,14 @@ import { PurchaseDetailsComponent } from "./components/purchaseDetails/purchaseD
 function App() {
   // list of products
   const [onSale, setOnSale] = useState([
-    { id: 1, name: "Item 1", price: 100 },
-    { id: 2, name: "Item 2", price: 200 },
-    { id: 3, name: "Item 3", price: 300 },
-    { id: 4, name: "Item 4", price: 400 },
-    { id: 5, name: "Item 1", price: 100 },
-    { id: 6, name: "Item 2", price: 200 },
-    { id: 7, name: "Item 3", price: 300 },
-    { id: 8, name: "Item 4", price: 400 },
-    { id: 9, name: "Item 1", price: 100 },
-    { id: 10, name: "Item 2", price: 200 },
-    { id: 11, name: "Item 3", price: 300 },
-    { id: 12, name: "Item 4", price: 400 },
+    { id: 1, name: "Arroz blanco", price: 100 },
+    { id: 2, name: "Gaseosa", price: 80 },
+    { id: 3, name: "Fernet", price: 150 },
+    { id: 4, name: "Pan", price: 25 },
+    { id: 5, name: "cafe", price: 50 },
   ]);
   // inventory
-  const [inventory, setInventory] = useState([
-    { id: 1, name: "Item 1", price: 100, quantity: 1 },
-    { id: 2, name: "Item 2", price: 200, quantity: 2 },
-    { id: 3, name: "Item 2", price: 200, quantity: 2 },
-    { id: 4, name: "Item 2", price: 200, quantity: 2 },
-    { id: 5, name: "Item 2", price: 200, quantity: 2 },
-    { id: 6, name: "Item 2", price: 200, quantity: 2 },
-    { id: 7, name: "Item 2", price: 200, quantity: 2 },
-    { id: 8, name: "Item 2", price: 200, quantity: 2 },
-    { id: 9, name: "Item 2", price: 200, quantity: 2 },
-    { id: 10, name: "Item 2", price: 200, quantity: 2 },
-    { id: 11, name: "Item 2", price: 200, quantity: 2 },
-    { id: 12, name: "Item 2", price: 200, quantity: 2 },
-    { id: 13, name: "Item 2", price: 200, quantity: 2 },
-    { id: 14, name: "Item 2", price: 200, quantity: 2 },
-    { id: 15, name: "Item 2", price: 200, quantity: 2 },
-  ]);
+  const [inventory, setInventory] = useState([]);
 
   return (
     <div className="App">
