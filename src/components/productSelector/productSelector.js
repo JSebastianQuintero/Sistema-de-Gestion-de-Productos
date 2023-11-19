@@ -26,6 +26,7 @@ export const ProductSelectorComponent = ({
                 <tr
                   key={item.id}
                   className="list-function"
+                  data-testid="product-row"
                   onClick={() => {
                     addProduct(item, inventory, setInventory);
                   }}

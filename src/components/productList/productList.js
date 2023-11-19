@@ -26,7 +26,7 @@ export const ProductListComponent = ({ inventory, setInventory }) => {
           <tbody>
             {inventory.map((item) => {
               return (
-                <tr key={item.id}>
+                <tr key={item.id} data-testid="product-row">
                   <td>
                     <button
                       className="styled-button"

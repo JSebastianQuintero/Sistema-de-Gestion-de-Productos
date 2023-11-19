@@ -1,20 +1,25 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 
-test("renders all components", () => {
+test("renders ProductListComponent", () => {
   render(<App />);
 
-  // Check for ProductListComponent
   const productListElement = screen.getByText(/subtotal/i);
   expect(productListElement).toBeInTheDocument();
+});
 
-  // Check for ProductSelectorComponent
+test("renders ProductSelectorComponent", () => {
+  render(<App />);
+
   const productSelectorElement = screen.getByText(
     /seleccionar nuevo producto/i
   );
   expect(productSelectorElement).toBeInTheDocument();
+});
 
-  // Check for PurchaseDetailsComponent
+test("renders ProductListComponent", () => {
+  render(<App />);
+
   const purchaseDetailsElement = screen.getByText(/Detalles de la compra/i);
   expect(purchaseDetailsElement).toBeInTheDocument();
 });
