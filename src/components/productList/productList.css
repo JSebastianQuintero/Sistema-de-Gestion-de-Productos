@@ -5,8 +5,19 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
+.title-bar {
+  height: 10%;
+}
+
 .product-list-bottom {
-  height: 92.6%;
+  height: 85%;
   position: relative;
   overflow: auto;
+}
+
+.total-bar {
+  background-color: #8200ff;
+  border-radius: 15px;
+  height: 5%;
+  transform: scale(0.99);
 }

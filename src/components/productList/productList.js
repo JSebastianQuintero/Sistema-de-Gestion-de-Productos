@@ -1,9 +1,5 @@
 import "./productList.css";
-import {
-  decrementQuantity,
-  incrementQuantity,
-  removeProduct,
-} from "../../utils/products";
+import { countItems, getTotalPrice, removeProduct } from "../../utils/products";
 
 export const ProductListComponent = ({ inventory, setInventory }) => {
   return (
@@ -41,6 +37,9 @@ export const ProductListComponent = ({ inventory, setInventory }) => {
             })}
           </tbody>
         </table>
+      </div>
+      <div className="total-bar title-bar">
+        {countItems(inventory)} items - Total: ${getTotalPrice(inventory)}
       </div>
     </div>
   );
