@@ -23,7 +23,11 @@ export const ProductSelectorComponent = ({
           <tbody>
             {products.map((item) => {
               return (
-                <tr key={item.id} className="list-function">
+                <tr
+                  key={item.id}
+                  className="list-function"
+                  data-testid="product-row"
+                >
                   <td>{item.name}</td>
                   <td>${item.price}</td>
                   <td
