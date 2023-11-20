@@ -7,11 +7,13 @@ export function incrementQuantity(itemID, inventory, setInventory) {
     return item;
   });
   setInventory(newInventory);
+  localStorage.setItem("inventory", JSON.stringify(newInventory));
 }
 
 export function removeProduct(itemID, inventory, setInventory) {
   const newInventory = inventory.filter((item) => item.id !== itemID);
   setInventory(newInventory);
+  localStorage.setItem("inventory", JSON.stringify(newInventory));
 }
 
 // Desc: Utility functions for purchase details
@@ -36,6 +38,8 @@ export function addProduct(item, inventory, setInventory) {
   if (found) {
     incrementQuantity(item.id, inventory, setInventory);
   } else {
-    setInventory([...inventory, { ...item, quantity: 1 }]);
+    const newInventory = [...inventory, { ...item, quantity: 1 }];
+    setInventory(newInventory);
+    localStorage.setItem("inventory", JSON.stringify(newInventory));
   }
 }
