@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   cursor: default;
+  padding: 1vh;
+  height: 98vh;
 }
 
 .invisible {
@@ -38,16 +40,6 @@ table {
 
 .styled-button:hover {
   transform: scale(1.2);
-  color: #8200ff;
-}
-
-/* list */
-.list-function {
-  cursor: pointer;
-}
-
-.list-function:hover {
-  background-color: #bdacf5;
   color: #8200ff;
 }
 

@@ -23,16 +23,16 @@ export const ProductSelectorComponent = ({
           <tbody>
             {products.map((item) => {
               return (
-                <tr
-                  key={item.id}
-                  className="list-function"
-                  data-testid="product-row"
-                  onClick={() => {
-                    addProduct(item, inventory, setInventory);
-                  }}
-                >
+                <tr key={item.id} className="list-function">
                   <td>{item.name}</td>
                   <td>${item.price}</td>
+                  <td
+                    onClick={() => {
+                      addProduct(item, inventory, setInventory);
+                    }}
+                  >
+                    <button className="styled-button">Agregar</button>
+                  </td>
                 </tr>
               );
             })}

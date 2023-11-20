@@ -12,11 +12,7 @@ export const ProductListComponent = ({ inventory, setInventory }) => {
         <table className="full-height">
           <thead>
             <tr>
-              <th>cantidad</th>
-              <th>descripcion</th>
-              <th>subtotal</th>
-              <th>total</th>
-              <th></th>
+              <th>Ticket</th>
             </tr>
           </thead>
         </table>
@@ -31,34 +27,15 @@ export const ProductListComponent = ({ inventory, setInventory }) => {
                     <button
                       className="styled-button"
                       onClick={() => {
-                        decrementQuantity(item.id, inventory, setInventory);
-                      }}
-                    >
-                      &lt;
-                    </button>
-                    {item.quantity}
-                    <button
-                      className="styled-button"
-                      onClick={() => {
-                        incrementQuantity(item.id, inventory, setInventory);
-                      }}
-                    >
-                      &gt;
-                    </button>
-                  </td>
-                  <td>{item.name}</td>
-                  <td>${item.price}</td>
-                  <td>${item.price * item.quantity}</td>
-                  <td>
-                    <button
-                      className="styled-button"
-                      onClick={() => {
                         removeProduct(item.id, inventory, setInventory);
                       }}
                     >
-                      quitar
+                      X
                     </button>
                   </td>
+                  <td>{item.name}</td>
+                  <td>x{item.quantity}</td>
+                  <td>${item.price * item.quantity}</td>
                 </tr>
               );
             })}
